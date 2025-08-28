@@ -1,0 +1,127 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Main-section {
+  text-align: center;
+  width: 40vw;
+  max-width: 50vw;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.Main-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.Main-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.upload-section {
+  margin: 20px 0;
+}
+
+.upload-section input[type="file"] {
+  padding: 10px;
+  border: 2px dashed #4caf50;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #f9fff9;
+  transition: 0.3s;
+}
+
+.upload-section input[type="file"]:hover {
+  background: #e8f5e9;
+}
+
+button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.det-ect-butn {
+  background: #4caf50;
+  color: white;
+}
+
+.det-ect-butn:hover {
+  background: #43a047;
+}
+
+.clear-butn {
+  background: #f44336;
+  color: white;
+}
+
+.clear-butn:hover {
+  background: #d32f2f;
+}
+
+.result-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #f0fff0;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.result-card h2 {
+  margin: 0 0 10px 0;
+  color: #2e7d32;
+}
+
+.result-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.result-card a:hover {
+  text-decoration: underline;
+}
+
+.error-box {
+  margin: 20px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffebee;
+  color: #d32f2f;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.loading {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
